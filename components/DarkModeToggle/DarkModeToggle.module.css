@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+
+  width: 50 px;
+  height: 30px;
+  border: 1.5px solid green;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.ball {
+  position: absolute;
+  background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+
+  animation: backgroundChange rotate infinite linear;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  }
+  25% {
+    background: linear-gradient(to bottom right, #04ffa3, #73ff00);
+  }
+  50% {
+    background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  }
+  75% {
+    background: linear-gradient(to bottom right, #00a86b, #73ff00);
+  }
+  100% {
+    background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90);
+  }
+  50% {
+    transform: rotate(180);
+  }
+  75% {
+    transform: rotate(270);
+  }
+  100% {
+    transform: rotate(360);
+  }
+}

@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  gap: 100px;
+  padding: 2rem 4rem;
+  flex: 1;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 68px;
+  background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  line-height: 4.4rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.description {
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.coolQuote {
+  font-size: 42px; /* Adjust as needed */
+  color: #3cff00; /* Your desired text color */
+  font-family: "Times New Roman", serif; /* Or any other font you prefer */
+
+  vertical-align: middle;
+}

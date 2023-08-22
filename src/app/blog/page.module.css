@@ -1,0 +1,35 @@
+.mainContainer {
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.heading {
+  background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  line-height: 4.4rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.content {
+}
+.title {
+  margin-bottom: 10px;
+}
+
+.decription {
+  font-size: 18px;
+  color: #999;
+}

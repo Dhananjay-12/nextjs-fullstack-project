@@ -1,0 +1,69 @@
+.container {
+  max-width: 100%;
+}
+
+.mainTitle {
+  font-size: 66px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+
+  padding-top: 4rem;
+}
+
+.title {
+  margin: 1rem 4rem;
+  border-top: 1px #bbb solid;
+  border-bottom: 1px #bbb solid;
+  display: inline-block;
+}
+
+.item {
+  border: 3px solid #bbb;
+  border-radius: 5px;
+  width: 300px;
+  min-height: 300px;
+  position: relative;
+  filter: blur(0.5px);
+  transition: all 0.5s ease-out;
+}
+
+.item:hover {
+  filter: blur(0px);
+  text-align: center;
+  border: 3px solid #a5ffa8;
+  transform: scale(1.02);
+  font-size: 2rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.cardTitle {
+  position: absolute;
+  right: 1%;
+  bottom: 1%;
+  font-size: 24px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.item:nth-child(1) {
+  background: url("/illustration.png");
+  background-size: cover;
+}
+.item:nth-child(2) {
+  background: url("/websites.jpg");
+  background-size: cover;
+}
+.item:nth-child(3) {
+  background: url("/apps.jpg");
+  background-size: cover;
+}

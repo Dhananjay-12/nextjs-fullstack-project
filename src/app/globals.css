@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1366px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dark {
+  background-color: rgb(37, 36, 36);
+  color: aliceblue;
+}
+
+.light {
+  background-color: aliceblue;
+  color: rgb(133, 115, 115);
+}
+
+.theme {
+  transition: all 0.5s ease-in;
+}

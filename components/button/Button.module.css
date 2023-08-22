@@ -1,0 +1,32 @@
+.button {
+  background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 1px rgba(35, 189, 43, 0.643);
+  transform: scale(1.05);
+  transition: all 0.6s ease-in;
+  width: max-content;
+  cursor: pointer;
+  animation: backgroundChange infinite ease 3s;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom right, #00a86b, #73ff00);
+  /* background-color: #00a86b; */
+}
+
+@keyframes backgroundChange {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
