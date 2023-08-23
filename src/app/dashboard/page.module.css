@@ -1,0 +1,151 @@
+/* /* page.module.css */
+
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+}
+
+.posts {
+  flex: 1;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #5e5d5d;
+
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+
+.imgContainer {
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.postTitle {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.delete {
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.3rem 0.5rem;
+  background-color: red;
+  border-radius: 100%;
+  transform: translate(50%, -50%);
+  font-size: 10px;
+}
+
+.loading {
+  margin: 20px;
+}
+
+.new {
+  flex: 1;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.input,
+.textArea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.new {
+  flex: 1;
+  background-color: #5e5d5d;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input,
+.textArea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.input:focus,
+.textArea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.textArea {
+  resize: vertical;
+}
+
+.button {
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  width: 100%;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom right, #00a86b, #73ff00);
+}
+
+.postTitle {
+  color: rgb(185, 183, 183);
+}
+
+.textBox {
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 10px 0;
+}

@@ -5,9 +5,8 @@ import Link from "next/link";
 
 const getData = async () => {
   try {
-    const res = await fetch("https://jsonplaceholder.typicode.com/photos", {
-      cache: "no-store",
-    });
+    const res = await fetch("http://localhost:3000/api/posts");
+
     if (!res.ok) {
       throw new Error("Failed to fetch data");
     }
@@ -26,10 +25,14 @@ async function Blog() {
         Dive into the Brilliant Blogs Crafted by Our Expert Team!
       </h1>
       {data?.map((item) => (
-        <Link href="/blog/testId" className={styles.container} key={item.id}>
+        <Link
+          href={`blog/${item._id}`}
+          className={styles.container}
+          key={item._id}
+        >
           <div className={styles.imgContainer}>
             <Image
-              src="https://images.pexels.com/photos/14730092/pexels-photo-14730092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={item.img}
               alt=""
               width={400}
               height={250}
@@ -38,7 +41,7 @@ async function Blog() {
           </div>
           <div className={styles.content}>
             <h2 className={styles.title}>{item.title}</h2>
-            <p className={styles.description}>{item.url}</p>
+            <p className={styles.description}>{item.content}</p>
           </div>
         </Link>
       ))}

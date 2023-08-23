@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 1 auto;
+}
+
+.input {
+  padding: 1rem;
+  width: 620px;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 2px 2px 2px rgba(92, 89, 89, 0.6);
+  margin: 1rem 0;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  color: aliceblue;
+  background: linear-gradient(to bottom right, #73ff00, #00a86b);
+  cursor: pointer;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.login {
+  font-size: 12px;
+  border-bottom: 1px solid rgb(49, 136, 212);
+}
+
+.error {
+  font-size: 12px;
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 202, 202);
+  padding: 6px;
+  border-radius: 0.4rem;
+}

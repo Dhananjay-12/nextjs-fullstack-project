@@ -6,6 +6,8 @@ import { TbDoorExit } from "react-icons/tb";
 
 import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+import { signOut, useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const links = [
   {
@@ -41,6 +43,9 @@ const links = [
 ];
 
 function Navbar() {
+  const session = useSession();
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
       <Link href={"/"} className={styles.logo}>
@@ -53,12 +58,11 @@ function Navbar() {
             {link.title}
           </Link>
         ))}
-        <button
-          className={styles.logout}
-          onClick={() => console.log("Logged Out")}
-        >
-          <TbDoorExit />
-        </button>
+        {session.status === "authenticated" && (
+          <button className={styles.logout} onClick={signOut}>
+            <TbDoorExit />
+          </button>
+        )}
       </div>
     </div>
   );
